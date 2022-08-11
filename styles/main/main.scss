@@ -1,0 +1,310 @@
+.main {
+  &_slider {
+    position: relative;
+
+    &__container {
+      display: none;
+      
+      &.active {
+        display: block;
+        background-image: url("../../images/banner1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: rgba(41, 59, 43, 0.35);
+      }
+    
+      &_next {
+        display: none;
+      }
+        
+      &_next.active {
+        display: block;
+        background-image: url("../../images/banner2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: rgba(41, 59, 43, 0.35);
+      }
+    }
+
+    &__block,
+    &__block_next {
+      position: relative;
+      width: 1182px;
+      margin: 0 auto;
+      padding: 83px 0 124px;
+    }
+    
+  }
+  
+  &_title__block {
+    margin-bottom: 61px;
+    width: 400px;
+    height: 169px;
+    font-family: 'Inter-ExtraBoldItalic';
+    font-weight: 900;
+    font-size: 43.5572px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  &_title {
+
+    &__middle {
+      text-align: right;
+    }
+
+    &__last {
+      font-size: 56.6243px;
+      line-height: 69px;
+    }
+  }
+
+  &_text {
+    width: 386px;
+    height: 114px;
+    margin-bottom: 29px;
+    font-family: 'Inter-Bold';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6)
+  }
+
+  &_btn__registrate {
+    position: relative;
+    width: 430px;
+    height: 80px;
+    font-family: 'Inter-Bold';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 148.9%;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+    box-shadow: 0px 5px 13px -14px rgba(41, 59, 43, 0.5);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+      transform: translate(-100%, -25%) rotate(10deg);
+      animation: blick 2s linear infinite;
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  @keyframes blick {
+    0% {
+      transform: translate(-100%, -25%) rotate(10deg);
+    }
+
+    50% {
+      transform: translate(100%, -25%) rotate(10deg);
+    }
+
+    100% {
+      transform: translate(100%, -25%) rotate(10deg);
+    }
+  }
+ 
+
+  &_btns {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &_btn__next_circle.active {
+    fill: #63D737;
+  }
+
+  &_btn__prev_circle.active {
+    fill: #63D737;
+  }
+
+  &_deposito {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 215px;
+    height: 86px;
+    padding: 14px 0 14.7px 0;
+    font-family: 'Inter-ExtraBoldItalic';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #293B2B;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 25.8px 25.8px;
+    box-sizing: border-box;
+
+    & p:last-child {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}
+
+@media (min-width:664px) and (max-width:1200px) {
+  .main {
+
+    &_btn__registrate {
+      width: 340px;
+      margin-bottom: 20px;
+    }
+
+    &_slider__container {
+      height: auto;
+    }
+
+    &_slider__block,
+    &_slider__block_next {
+      height: auto;
+      width: auto;
+      padding: 60px 0 40px 30px;
+    }
+
+    &_deposito {
+      right: 30px;
+      height: 60px;
+      padding: 0;
+    }
+
+    &_title__block {
+      width: 350px;
+      font-size: 40px;
+    }
+
+    &_title__last {
+      font-size: 50px;
+    }
+
+    &_text {
+      width: 316px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width:664px) {
+  .main {
+    height: 760px;
+    background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293B2B 100%);
+    
+    &_title__block {
+      width: 221.49px;
+      height: 93.32px;
+      margin: 0 auto;
+      padding-bottom: 23.68px;
+      font-size: 24.0958px;
+      line-height: 29px;
+    }
+
+    &_title__last {
+      font-size: 31.3245px;
+      line-height: 38px;
+    }
+
+    &_text {
+      width: 226px;
+      font-size: 15.7428px;
+      line-height: 120%;
+      text-align: center;
+      height: auto;
+      margin: 0 auto;
+      padding-bottom: 5px;
+    }
+    
+    &_slider {
+      height: 100%;
+
+      &__container.active,
+      &__container_next.active {
+        height: 100%;
+        background-size: contain;
+      }
+    }
+
+    &_slider {
+
+      &__block,
+      &__block_next {
+        width: 320px;
+        padding: 50px 0 0 0;
+      }
+
+      &__container {
+        background-image: url('../../images/banner2_mobile.png');
+
+        &.active {
+          background-image: url('../../images/banner1_mobile.png');
+          background-size: contain;
+        }
+
+        &_next.active {
+          background-image: url('../../images/banner2_mobile.png');
+          background-size: contain;
+        }
+      }
+    }
+
+    &_deposito {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 211px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0 6px;
+      font-size: 10.3256px;
+      line-height: 12px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+      border-radius: 0px 0px 13.32px 13.32px;
+
+      & p:last-child {
+        font-size: 12.33px;
+        line-height: 15px;
+      }
+    }
+
+    &_btn__registrate {
+      width: 263px;
+      height: 48.93px;
+      display: block;
+      margin: 0 auto;
+      font-size: 22.0186px;
+      line-height: 148.9%;
+    }
+  }
+}

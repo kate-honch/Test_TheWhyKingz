@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexico Landing Page</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/header/header.css">
+  <link rel="stylesheet" href="./styles/main/main.css">
+  <link rel="stylesheet" href="./styles/footer/footer.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header_container">
+      <img class="header_logo" src="./images/Logo.svg" alt="logo">
+
+      <div>
+        <a class="header_link" href="#">Acceder</a>
+
+        <button class="header_btn">Regístrate</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main_slider">
+      <div class="main_slider__container">
+        <div class="main_slider__block">
+          <div class="main_title__block">
+            <p class="main_title">Bono de primer</p>
+
+            <p class="main_title__middle">depósito hasta</p>
+
+            <p class="main_title__last">40 000 MXN</p>
+          </div>
+
+          <p class="main_text">Reembolso del 500% en apuestas deportivas</p>
+
+          <button class="main_btn__registrate">Regístrate</button>
+
+          <div class="main_deposito">
+            <p>Deposito minimo</p>
+
+            <p>500 MXN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_slider__container_next active">
+        <div class="main_slider__block_next">
+          <div class="main_title__block">
+            <p class="main_title">Bono de primer</p>
+
+            <p class="main_title__middle">depósito hasta</p>
+
+            <p class="main_title__last">40 000 MXN</p>
+          </div>
+
+          <p class="main_text">COMBOBOOST hasta el 100% en apuestas combinadas</p>
+
+          <button class="main_btn__registrate">Regístrate</button>
+
+          <div class="main_deposito">
+            <p>Deposito minimo</p>
+
+            <p>500 MXN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_btns">
+        <button class="main_btn__prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="main_btn__prev_circle" y="-0.000915527" width="10" height="10" rx="5" fill="#D9D9D9"/>
+          </svg>
+        </button>
+  
+        <button class="main_btn__next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="main_btn__next_circle active" y="-0.000915527" width="10" height="10" rx="5" fill="#D9D9D9"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_suscribete">
+      <img class="footer_suscribete__logo" src="./images/logo.svg" alt="logo"/>
+
+      <div class="footer_suscribete__block">
+          <input type="text" name="email" placeholder="Correo electronico"/>
+
+        <span>Suscríbete</span>
+      </div>
+
+      <img class="footer_payment" src="./images/footer_payment.png" alt="payment system">
+
+      <img class="footer_payment__mobile" src="./images/footer_payment2.png" alt="payment system">
+    </div>
+  </footer>
+</body>
+</html>

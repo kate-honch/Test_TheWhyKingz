@@ -1,0 +1,115 @@
+.header {
+  height: 60px;
+  background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+  mix-blend-mode: normal;
+}
+.header_container {
+  width: 1182px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.header_link {
+  margin-right: 19px;
+  font-family: "Inter-Bold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+  transition: color 0.5s;
+}
+.header_link:hover {
+  color: #63D737;
+}
+.header_btn {
+  position: relative;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  font-family: "Inter-Bold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+  border-radius: 397px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.header_btn:before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+  transform: translate(-100%, -25%) rotate(10deg);
+  -webkit-animation: blick 2s infinite;
+          animation: blick 2s infinite;
+}
+.header_btn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@-webkit-keyframes blick {
+  0% {
+    transform: translate(-100%, -25%) rotate(10deg);
+  }
+  50% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+  100% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+}
+@keyframes blick {
+  0% {
+    transform: translate(-100%, -25%) rotate(10deg);
+  }
+  50% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+  100% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+}
+
+@media (min-width: 664px) and (max-width: 1200px) {
+  .header {
+    height: auto;
+  }
+  .header_container {
+    padding: 30px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 664px) {
+  .header {
+    height: 40px;
+  }
+  .header_container {
+    width: 320px;
+    padding: 9px 0;
+  }
+  .header_link {
+    display: none;
+  }
+  .header_logo {
+    width: 70.38px;
+    height: 18px;
+  }
+  .header_btn {
+    width: 86.67px;
+    height: 22px;
+    font-size: 10.6667px;
+    line-height: 13px;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,109 @@
+.footer {
+  background-color: #293B2B;
+}
+.footer_suscribete {
+  width: 1182px;
+  margin: 0 auto;
+  padding: 91px 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer_suscribete__block {
+  display: flex;
+  align-items: center;
+  width: 980px;
+  height: 44px;
+  background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+  border-radius: 99.1525px;
+}
+.footer_suscribete__block:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer_suscribete__block input {
+  height: 40px;
+  position: relative;
+  left: 2px;
+  width: 799px;
+  padding: 7px 0 9px 24px;
+  right: 0;
+  font-family: "Inter-Bold";
+  border-radius: 99.1525px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.footer_suscribete__block span {
+  padding: 13px 47px 14px 42px;
+  font-family: "Inter-Bold";
+  font-size: 17.1864px;
+  line-height: 100%;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.footer_payment {
+  margin-top: 90px;
+}
+.footer_payment__mobile {
+  display: none;
+}
+
+@media (min-width: 664px) and (max-width: 1200px) {
+  .footer_suscribete {
+    width: auto;
+    padding: 45px 30px 56px;
+    flex-direction: column;
+  }
+  .footer_suscribete__block {
+    height: 50px;
+    width: 100%;
+  }
+  .footer_suscribete__block input {
+    width: 100%;
+  }
+  .footer_suscribete__logo {
+    margin-bottom: 20px;
+  }
+  .footer_payment {
+    width: 100%;
+    margin-top: 65px;
+  }
+}
+@media screen and (max-width: 664px) {
+  .footer_suscribete {
+    width: 320px;
+    padding: 42px 0 43px;
+  }
+  .footer_suscribete__logo {
+    margin: 0 auto;
+  }
+  .footer_suscribete__block {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 45px;
+  }
+  .footer_suscribete__block input {
+    width: 222px;
+    height: 30px;
+    padding: 6px 0 6px 12px;
+    font-size: 12.1086px;
+  }
+  .footer_suscribete__block span {
+    padding: 10px 17px 10px 16px;
+    font-size: 12.1086px;
+  }
+  .footer_suscribete__logo {
+    width: 101.66px;
+    height: 26px;
+    order: 3;
+  }
+  .footer_payment {
+    display: none;
+  }
+  .footer_payment__mobile {
+    display: block;
+    height: 69.77px;
+    margin-bottom: 42.23px;
+  }
+}/*# sourceMappingURL=footer.css.map */
